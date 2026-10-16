@@ -1,5 +1,5 @@
 const ALLOWED_ORIGIN = "https://suyao664-cloud.github.io";
-const MODEL = "@cf/meta/llama-3.1-8b-instruct";
+const MODEL = "@cf/meta/llama-3.3-70b-instruct-fp8-fast
 
 export default {
   async fetch(request, env) {
