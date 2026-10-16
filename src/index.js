@@ -49,8 +49,7 @@ export default {
         max_tokens: 256,
       });
       return json({ reply: result?.response || "我在，慢慢说。" });
-    } catch (error) {
-      return json({ error: "AI request failed" }, 500);
+} catch (error) {
+  console.error("AI ERROR:", error);
+  return json({ error: "AI request failed" }, 500);
     }
-  },
-};
