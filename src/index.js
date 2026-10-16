@@ -53,3 +53,5 @@ export default {
   console.error("AI ERROR:", error);
   return json({ error: "AI request failed" }, 500);
     }
+},
+};
